@@ -1,0 +1,195 @@
+@import url('http://fonts.cdnfonts.com/css/gotham');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+header {
+    width: 100%;
+    padding: 15px 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 1%, rgba(0,0,0,0) 100%);
+    position: fixed;
+    z-index: 1;
+}
+
+.logo-and-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}
+
+.logo {
+    width: 100%;
+    max-width: 6em;
+    /* max-height: 35px; */
+    display: inline-block;
+}
+
+.logo div {
+    padding-top: 35%;
+    background-image: url('../img/logo.png');
+    background-position: center;
+    background-size: 170px;
+}
+
+nav {
+    margin-left: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    margin-left: 15px;
+    font-weight: 500;
+    transition-duration: .4s;
+}
+
+nav a:hover {
+    color: rgb(196, 196, 196);
+}
+
+.secondary-navigation {
+    position: absolute;
+    right: 35px;
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.secondary-navigation div {
+    margin-right: 20px;
+    font-size: 21px;
+}
+
+.search {
+    color: white;
+}
+
+.perfil-kid a{
+    line-height: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.notification {
+    color: white;
+    font-size: 20px;
+}
+
+.perfis {
+    display: flex;
+    align-items: center;
+}
+
+.perfis i {
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    line-height: 8px;
+}
+
+section.exibir-filme {
+    width: 100%;
+    height: calc(100vh + 90px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../img/img-filme.webp');
+    background-position: center;
+    background-size: 100% 100%;
+    color: white;
+}
+
+.informacao-filme {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 7%;
+}
+
+.informacao-filme div {
+    background-image: url('../img/img-text-filme.webp');
+    padding-top: 50%;
+    background-size: 500px;
+    background-repeat: no-repeat;
+}
+
+.informacao {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.informacao p {
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.top10 {
+    background-image: url('../img/top10.png');
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.descricao {
+    width: 495px;
+    font-size: 18.5px;
+    font-weight: 500;
+    margin-top: 15px;
+    line-height: 24px;
+}
+
+.play-info {
+    margin-top: 15px;
+}
+
+.play-info button {
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    padding: 10px 22px;
+    cursor: pointer;
+}
+
+.play-info button.btn-play {
+    background-color: white;
+}
+
+.play-info button.btn-info {
+    background-color: rgba(207, 207, 207, 0.473);
+    color: white;
+}
+
+.play-info button.btn-play:hover {
+    background: rgb(182, 182, 182);
+}
+
+.play-info button.btn-info:hover {
+    background: rgba(182, 182, 182, 0.397);
+}
