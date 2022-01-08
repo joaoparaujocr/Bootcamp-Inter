@@ -7,15 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Required Core stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <!-- Optional Theme stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Início - Netflix</title>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <div class="logo-and-nav">
-                <div aria-label="Netflix" class="logo"><div></div></div>
+            <div class="container-navigation">
+                <div aria-label="Netflix" class="logo">
+                    <div></div>
+                </div>
+
                 <nav>
                     <a href="">Início</a>
                     <a href="">Séries</a>
@@ -26,31 +36,107 @@
 
                 <div class="secondary-navigation">
                     <div class="search fas fa-search" href=""></div>
-                    <div class="perfil-kid"><a href="">Infantil</a></div>
+                    <div class="profile-kid"><a href="">Infantil</a></div>
                     <div class="notification fas fa-bell"></div>
-                    <div class="perfis">
+
+                    <div class="profile-main">
                         <img src="img/img-perfil.png" style="border-radius: 5px;" width="35px" height="35px" alt="">
-                        <i class="fas fa-sort-down"></i>
+
+                        <span class="fas fa-sort-down"></span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="exibir-filme">
+    <section class="highlighted">
         <div class="container">
-            <div class="informacao-filme"><div></div></div><!---->
-            <div class="informacao">
+            <div class="movie-info">
+                <div></div>
+            </div>
+            <!---->
+
+            <div class="classification">
                 <div class="top10"></div>
+
                 <p>Top 3 em séries hoje</p>
             </div>
-            <p class="descricao">Este remake da novela clássica de 1994 conta historia de amor entre a trabalhadora rural Gaviota e Sebastian, um herdeiro da aristocrasia cafeeira.</p>
+            <!--classification-->
+
+            <p class="synopsis">Este remake da novela clássica de 1994 conta historia de amor entre a trabalhadora rural
+                Gaviota e Sebastian, um herdeiro da aristocrasia cafeeira.</p>
+
             <div class="play-info">
-                <button class="btn-play"><i class="fas fa-play"></i> Assistir</button>
-                <button class="btn-info"><i class="fas fa-exclamation-circle"></i> Mais informações</button>
+                <button class="btn-play"><span class="fas fa-play"></span> Assistir</button>
+
+                <button class="btn-info"><span class="fas fa-exclamation-circle"></span> Mais informações</button>
             </div>
+            <!--play-info-->
+
         </div>
+        <!--container-->
     </section>
+    <!--highlighted-->
+
+    <section class="movies">
+            <div class="movies-box">
+                <h2>Populares na Netflix</h2>
+                <div class="glide">
+                    <div data-glide-el="track" class="glide__track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide"><img src="img/img-1.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-2.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-3.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-4.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-5.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-6.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-7.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-8.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-9.webp" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-10.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-11.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-12.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-13.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-14.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-15.webp" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-16.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-17.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-18.webp" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-19.jpg" alt=""></li>
+                            <li class="glide__slide"><img src="img/img-20.webp" alt=""></li>
+                        </ul>
+                    </div>
+
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="=0"><i class="fas fa-chevron-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir="=5"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        <!-- <div class="glide">
+            <div data-glide-el="track" class="glide__track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">1</li>
+                    <li class="glide__slide">2</li>
+                    <li class="glide__slide">3</li>
+                </ul>
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
+        </div> -->
+    </section>
+
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="js/main.js">
+        // new Glide('.glide', {
+        //     type: 'carousel',
+        //     startAt: 0,
+        //     perView: 5
+        // }).mount()
+    </script>
 </body>
 
 </html>
