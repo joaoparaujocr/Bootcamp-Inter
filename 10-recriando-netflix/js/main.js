@@ -1,27 +1,21 @@
-let arrows = document.querySelector('.glide__arrow');
+const btnSearch = document.querySelector('#btn-search');
+const inputSearch = document.querySelector('.box-search input');
 
-const checkPosition = el => {
-    let indGet = el.getAttribute('data-glide-dir').slice(1);
-    if(el.getAttribute('class') === 'glide__arrow glide__arrow--left'){
-        let indSet = el.setAttribute('data-glide-dir', `=${indGet < -5 ? 0 : indGet -= 5}`)
-        return indSet;
-    }
-}
-
-arrows.addEventListener('click', e => {
-    let el = e.target
-    checkPosition(el)
-})
-
-let glid = new Glide('.glide', {
-    type: 'carousel',
-    startAt: 0,
-    perView: 5,
-    peek: {
-        before: 55,
-        after: 55
-    },
-    gap: 1,
+btnSearch.addEventListener('click', e => {
+    console.log('seacr')
+    inputSearch.classList.toggle('active');
+    inputSearch.classList.toggle('animation-target');
+    btnSearch.classList.toggle('active');
+    inputSearch.focus();
+    e.stopImmediatePropagation();
 });
 
-glid.mount()
+inputSearch.addEventListener('click', e => e.stopPropagation())
+
+document.body.addEventListener('click', e => {
+    console.log('body')
+    inputSearch.classList.remove('active');
+    inputSearch.classList.remove('animation-target');
+    btnSearch.classList.remove('active');
+    e.stopImmediatePropagation();
+})
