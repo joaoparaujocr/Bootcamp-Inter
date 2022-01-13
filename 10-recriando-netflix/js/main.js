@@ -102,7 +102,9 @@ function openSubMenu(el) {
         return
     }
 
-    boxProfiles.classList.add('active');
+    if(el.classList.contains('profile-main')) {
+        boxProfiles.classList.add('active');
+    }
 }
 
 function closeSubMenuNot() {

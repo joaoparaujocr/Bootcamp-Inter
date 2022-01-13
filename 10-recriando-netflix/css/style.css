@@ -56,6 +56,8 @@ header {
 
 #btn-mobile {display: none;}
 
+ul i {visibility: hidden;}
+
 nav {
     margin-left: 28px;
 }
