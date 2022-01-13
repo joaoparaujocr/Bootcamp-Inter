@@ -17,8 +17,8 @@
   transform: translateY(-50%);
   line-height: 1;
   height: 100%;
-  width: 55px;
-  font-size: 30px;
+  width: calc(100vw / 25);
+  font-size: calc(100vw / 40);
   outline: none;
 }
 .glide__arrow:focus {
